@@ -26,9 +26,9 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
-                    <a className="btn">Button</a>
+                <div className="navbar-end flex flex-row gap-3 ">
+                    <a className="btn btn-primary bg-[#23BE0A] rounded-lg border-0 text-white">Sign In</a>
+                    <a className="btn btn-primary bg-[#59C6D2] rounded-lg border-0 text-white">Sign Up</a>
                 </div>
             </div>
         </div>
