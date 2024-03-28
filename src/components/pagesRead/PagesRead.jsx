@@ -21,8 +21,8 @@ const PagesRead = () => {
     }, [books]);
 
     return (
-        <div className='bg-[#0d0d0d08] flex flex-row justify-center items-center py-12'>
-            <BarChart width={600} height={400} data={Rbook}>
+        <div className='bg-[#0d0d0d08] max-w-[85%] mx-auto flex justify-center items-center py-12 mt-8 rounded-3xl'>
+            <BarChart width={1000} height={400} data={Rbook}>
                 <XAxis dataKey="bookName" />
                 <YAxis />
                 <Tooltip />

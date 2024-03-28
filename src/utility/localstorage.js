@@ -68,4 +68,8 @@ const checkIsInReadList = (id)=>{
 
 }
 
-export {getStoredAddBookOtpion, saveAddBookOption, getStoredWishBookOtpion, saveWishBookOption, removeFromWishList, checkIsInReadList}
+const filterByProperty = (array, propertyName, thresholdValue) => {
+    return array.filter(obj => obj[propertyName] > thresholdValue);
+};
+
+export {getStoredAddBookOtpion, saveAddBookOption, getStoredWishBookOtpion, saveWishBookOption, removeFromWishList, checkIsInReadList, filterByProperty}

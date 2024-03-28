@@ -6,6 +6,8 @@ const Navbar = () => {
         <li><NavLink to="/" className='hover:text-[#17BE0A] text-lg font-semibold'>Home</NavLink></li>
         <li><NavLink to ="/listed-books" className='text-lg font-semibold'>Listed Books</NavLink></li>
         <li><NavLink to="/pages-to-read" className='text-lg font-semibold'>Pages To Read</NavLink></li>
+        <li><NavLink to="/recommendation" className='text-lg font-semibold'>Recommendation</NavLink></li>
+        <li><NavLink to="/challenges" className='text-lg font-semibold'>Challenges</NavLink></li>
     </>
     return (
         <div>

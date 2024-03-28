@@ -14,6 +14,8 @@ import ErrorPage from './components/errorPage/ErrorPage.jsx';
 import BookDetails from './components/bookDetails/BookDetails.jsx';
 import ReadList from './components/listedBooks/ReadList.jsx';
 import WishListBooks from './components/listedBooks/WishListBooks.jsx';
+import Recommendation from './components/recommendation/Recommendation.jsx';
+import Challenges from './components/challenges/challenges.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,24 +34,34 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <ReadList></ReadList>,
-            loader: ()=> fetch('../public/books.json')
+            loader: ()=> fetch('../books.json')
           },
           {
             path:"wishList",
             element:<WishListBooks></WishListBooks>,
-            loader: ()=> fetch('../public/books.json')
+            loader: ()=> fetch('../books.json')
           }
         ]
       },
       {
         path:"/pages-to-read",
         element:<PagesRead></PagesRead>,
-        loader: ()=> fetch('../public/books.json')
+        loader: ()=> fetch('../books.json')
       },
       {
         path: '/book/:bookId',
         element: <BookDetails></BookDetails>,
         loader: () => fetch('../books.json')
+      },
+      {
+        path:"/recommendation",
+        element:<Recommendation></Recommendation>,
+        loader: () => fetch('../books.json')
+      },
+      {
+        path:"/challenges",
+        element:<Challenges></Challenges>
+        
       }
       
     ]

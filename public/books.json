@@ -1,81 +1,194 @@
 [
-    {
-      "bookId": 1,
-      "bookName": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "image": "to_kill_a_mockingbird.jpg",
-      "review": "A powerful story of racial injustice and moral growth in the American South.",
-      "totalPages": 281,
-      "rating": 4.5,
-      "category": "Fiction",
-      "tags": ["Classic", "Social Issues"],
-      "publisher": "J.B. Lippincott & Co.",
-      "yearOfPublishing": 1960
-    },
-    {
-      "bookId": 2,
-      "bookName": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "image": "the_great_gatsby.jpg",
-      "review": "A brilliant portrayal of the Jazz Age that explores themes of decadence, idealism, and excess.",
-      "totalPages": 180,
-      "rating": 4.2,
-      "category": "Fiction",
-      "tags": ["American Literature", "Romance"],
-      "publisher": "Charles Scribner's Sons",
-      "yearOfPublishing": 1925
-    },
-    {
-      "bookId": 3,
-      "bookName": "1984",
-      "author": "George Orwell",
-      "image": "1984.jpg",
-      "review": "A dystopian novel that explores themes of totalitarianism, surveillance, and individual freedom.",
-      "totalPages": 328,
-      "rating": 4.7,
-      "category": "Science Fiction",
-      "tags": ["Dystopian", "Political"],
-      "publisher": "Secker & Warburg",
-      "yearOfPublishing": 1949
-    },
-    {
-      "bookId": 4,
-      "bookName": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "image": "pride_and_prejudice.jpg",
-      "review": "A delightful romantic comedy that satirizes 19th-century social customs and marriage.",
-      "totalPages": 279,
-      "rating": 4.4,
-      "category": "Classic",
-      "tags": ["Romance", "Satire"],
-      "publisher": "T. Egerton, Whitehall",
-      "yearOfPublishing": 1813
-    },
-    {
-      "bookId": 5,
-      "bookName": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "image": "the_catcher_in_the_rye.jpg",
-      "review": "A coming-of-age novel that captures the disillusionment and angst of adolescence.",
-      "totalPages": 224,
-      "rating": 4.1,
-      "category": "Fiction",
-      "tags": ["Coming-of-Age", "Existentialism"],
-      "publisher": "Little, Brown and Company",
-      "yearOfPublishing": 1951
-    },
-    {
-      "bookId": 6,
-      "bookName": "Brave New World",
-      "author": "Aldous Huxley",
-      "image": "brave_new_world.jpg",
-      "review": "A dystopian novel that explores themes of genetic engineering, social conditioning, and individual freedom.",
-      "totalPages": 288,
-      "rating": 4.6,
-      "category": "Science Fiction",
-      "tags": ["Dystopian", "Social Commentary"],
-      "publisher": "Chatto & Windus",
-      "yearOfPublishing": 1932
-    }
-  ]
-  
+  {
+    "bookId": 1,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/301Xybs/mocking-Bird.jpg",
+    "review": "A powerful story of racial injustice and moral growth in the American South.",
+    "totalPages": 281,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Social Issues"
+    ],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 2,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/NmgjzcW/The-Great-Gatsby.jpg",
+    "review": "A brilliant portrayal of the Jazz Age that explores themes of decadence, idealism, and excess.",
+    "totalPages": 180,
+    "rating": 4.2,
+    "category": "Fiction",
+    "tags": [
+      "American Literature",
+      "Romance"
+    ],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 3,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/JvfNd0C/1984.jpg",
+    "review": "A dystopian novel that explores themes of totalitarianism, surveillance, and individual freedom.",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopian",
+      "Political"
+    ],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 4,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/jZ168xk/Pride-and-Prejudice.jpg",
+    "review": "A delightful romantic comedy that satirizes 19th-century social customs and marriage.",
+    "totalPages": 279,
+    "rating": 4.4,
+    "category": "Classic",
+    "tags": [
+      "Romance",
+      "Satire"
+    ],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/P49nRwt/The-Catcher-in-the-Rye.jpg",
+    "review": "A coming-of-age novel that captures the disillusionment and angst of adolescence.",
+    "totalPages": 224,
+    "rating": 4.1,
+    "category": "Fiction",
+    "tags": [
+      "Coming-of-Age",
+      "Existentialism"
+    ],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 6,
+    "bookName": "Brave New World",
+    "author": "Aldous Huxley",
+    "image": "https://i.ibb.co/LZ1QGB2/Brave-New-World.jpg",
+    "review": "A dystopian novel that explores themes of genetic engineering, social conditioning, and individual freedom.",
+    "totalPages": 288,
+    "rating": 4.6,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopian",
+      "Social Commentary"
+    ],
+    "publisher": "Chatto & Windus",
+    "yearOfPublishing": 1932
+  },
+  {
+    "bookId": 7,
+    "bookName": "Moby-Dick",
+    "author": "Herman Melville",
+    "image": "https://i.ibb.co/s2GWkL8/Moby-Dick.jpg",
+    "review": "A gripping tale of obsession and revenge set against the backdrop of the whaling industry. Captain Ahab's relentless pursuit of the white whale, Moby-Dick, serves as a metaphor for humanity's struggle against nature and fate. Melville's rich prose and vivid descriptions transport readers to the vast expanses of the sea, where danger and adventure await at every turn.",
+    "totalPages": 624,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": [
+      "Adventure",
+      "Literary Fiction"
+    ],
+    "publisher": "Richard Bentley",
+    "yearOfPublishing": 1851
+  },
+  {
+    "bookId": 8,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/TPgYBWF/The-Hobbit.jpg",
+    "review": "An enchanting tale of adventure and heroism in the fantasy realm of Middle-earth. Bilbo Baggins, a hobbit of the Shire, embarks on a journey to reclaim a stolen treasure guarded by the fearsome dragon Smaug. Along the way, he encounters elves, dwarves, and wizards, facing challenges and dangers that test his courage and cunning.",
+    "totalPages": 310,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": [
+      "Adventure",
+      "Middle-earth"
+    ],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+  },
+  {
+    "bookId": 9,
+    "bookName": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "image": "https://i.ibb.co/bR0tHFN/Crime-and-Punishment.jpg",
+    "review": "A psychological thriller that delves into the depths of the human psyche. Raskolnikov, a destitute student in St. Petersburg, commits a heinous crime and grapples with guilt and paranoia as he tries to evade capture. Dostoevsky's masterful exploration of morality, redemption, and existential angst makes this novel a timeless classic.",
+    "totalPages": 551,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": [
+      "Psychological Thriller",
+      "Russian Literature"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1866
+  },
+  {
+    "bookId": 10,
+    "bookName": "The Odyssey",
+    "author": "Homer",
+    "image": "https://i.ibb.co/vdkDftR/The-Odyssey.jpg",
+    "review": "An epic poem that follows the journey of the Greek hero Odysseus as he strives to return home after the Trojan War. Faced with mythical creatures, vengeful gods, and treacherous seas, Odysseus demonstrates cunning and perseverance in his quest to reunite with his family. Homer's vivid imagery and timeless themes of heroism and resilience continue to captivate readers across the ages.",
+    "totalPages": 389,
+    "rating": 4.6,
+    "category": "Epic Poetry",
+    "tags": [
+      "Greek Mythology",
+      "Adventure"
+    ],
+    "publisher": "Various",
+    "yearOfPublishing": -800
+  },
+  {
+    "bookId": 11,
+    "bookName": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "image": "https://i.ibb.co/BCRRWTJ/The-Picture-of-Dorian-Gray.jpg",
+    "review": "A haunting tale of vanity, decadence, and the pursuit of eternal youth. Dorian Gray, a young man of exceptional beauty, makes a Faustian bargain to preserve his appearance while his portrait ages in his place. As Dorian indulges in a life of hedonism and moral decay, his portrait reflects the true cost of his sins.",
+    "totalPages": 254,
+    "rating": 4.5,
+    "category": "Gothic Fiction",
+    "tags": [
+      "Victorian Literature",
+      "Morality"
+    ],
+    "publisher": "Ward, Lock & Co.",
+    "yearOfPublishing": 1890
+  },
+  {
+    "bookId": 12,
+    "bookName": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "image": "https://i.ibb.co/zXryycy/Anna-Karenina.jpg",
+    "review": "A sweeping saga of love, betrayal, and societal conventions set in Imperial Russia. Anna Karenina, a married aristocrat, embarks on a passionate affair with Count Vronsky, leading to scandal and tragedy. Tolstoy's rich characterizations and keen insights into human nature make this novel a masterpiece of Russian literature.",
+    "totalPages": 864,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": [
+      "Romanticism",
+      "Social Commentary"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1878
+  }
+]

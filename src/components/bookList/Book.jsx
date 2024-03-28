@@ -19,7 +19,7 @@ const Book = ({ book }) => {
             <Link to={`/book/${bookId}`}>
                 <div className="card w-80 md:w-96 bg-white border border-[#13131326] p-6">
                     <div className='flex flex-row justify-center items-center bg-[#F3F3F3] rounded-xl py-6'>
-                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="" className="w-28 h-40" />
+                        <img src={image} alt="" className="w-28 h-40" />
                     </div>
                     <div className="text-left">
                         <div className=' pb-5 border-dashed border-b-[1px] border-[#13131326]'>

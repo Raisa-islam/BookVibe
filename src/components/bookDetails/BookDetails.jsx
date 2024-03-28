@@ -40,11 +40,11 @@ const BookDetails = () => {
         
     } 
     return (
-        <div className="mt-10">
+        <div className="mt-10 mb-16">
             <ToastContainer/>
             <div className='flex flex-col md:flex-row gap-8 p-5 md:p-0'>
-                <div className='md:w-1/2 bg-[#1313130D] rounded-2xl p-16'>
-                    <img src={book.image} alt="" />
+                <div className='md:w-1/2 bg-[#1313130D] rounded-2xl p-16 flex justify-center items-center'>
+                    <img src={book.image} alt="" className="h-96 w-64 md:h-[500px] md:w-96" />
                 </div>
                 <div className='md:w-1/2'>
                     <div>

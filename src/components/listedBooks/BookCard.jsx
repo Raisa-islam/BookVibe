@@ -4,11 +4,10 @@ import pepi from '../../assets/pep.png'
 import readi from '../../assets/read.png'
 
 const BookCard = ({book}) => {
-    const { bookId,
+    const {
         bookName,
         author,
         image,
-        review,
         totalPages,
         rating,
         category,
@@ -17,7 +16,7 @@ const BookCard = ({book}) => {
         yearOfPublishing } = book;
     return (
         <div className="w-full p-4 border border-[#13131326] rounded-2xl mt-6 md:flex flex-row gap-5">
-            <div className='md:w-2/5 lg:w-1/5 bg-[#1313130D] rounded-2xl p-4'>
+            <div className='md:w-2/5 lg:w-1/5 bg-[#1313130D] rounded-2xl p-4 flex justify-center items-center'>
                 <img src={image} alt="ami" />
             </div>
             <div className='md:3/5 lg:w-4/5'>
