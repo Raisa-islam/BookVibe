@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredAddBookOtpion } from "../../utility/localstorage";
+import { getStoredAddBookOtpion} from "../../utility/localstorage";
 
 const ReadList = () => {
     const [Rbook, setRbook] = useState([]);
@@ -14,6 +14,7 @@ useEffect(() => {
         const ReadBook = books.filter(book => storedBook.includes(book.bookId));
         console.log("Filtered books:", ReadBook);
         setRbook(ReadBook);
+
     }
 }, []);
 

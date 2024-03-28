@@ -38,4 +38,34 @@ const saveWishBookOption = id =>{
     return !exists;
 }
 
-export {getStoredAddBookOtpion, saveAddBookOption, getStoredWishBookOtpion, saveWishBookOption}
+const removeFromWishList = (id) => {
+
+    const items = getStoredWishBookOtpion();
+    const index = items.indexOf(id);
+    
+    if (index !== -1) {
+        // Remove the ID from the array
+        items.splice(index, 1);
+        
+        // Update the stored IDs in local storage
+        localStorage.setItem('add-wish-book', JSON.stringify(items));
+        
+        console.log(`ID ${id} removed from local storage.`);
+    } else {
+        console.log(`ID ${id} not found in local storage.`);
+    }
+}
+
+const checkIsInReadList = (id)=>{
+    const items = getStoredAddBookOtpion();
+    const index = items.indexOf(id);
+
+    if(index === -1){
+        return 1;
+        
+    }
+    return 0;
+
+}
+
+export {getStoredAddBookOtpion, saveAddBookOption, getStoredWishBookOtpion, saveWishBookOption, removeFromWishList, checkIsInReadList}
