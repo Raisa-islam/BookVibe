@@ -2,8 +2,9 @@ import PropTypes from 'prop-types';
 import loci from '../../assets/loc.png'
 import pepi from '../../assets/pep.png'
 import readi from '../../assets/read.png'
+import { useNavigate } from 'react-router-dom';
 
-const BookCard = ({book}) => {
+const BookCard = ({ book }) => {
     const {
         bookName,
         author,
@@ -14,6 +15,13 @@ const BookCard = ({book}) => {
         tags,
         publisher,
         yearOfPublishing } = book;
+
+    const navigate = useNavigate();
+
+    const handleViewDetails = () => {
+        navigate(`/book/${book.bookId}`);
+    };
+
     return (
         <div className="w-full p-4 border border-[#13131326] rounded-2xl mt-6 md:flex flex-row gap-5">
             <div className='md:w-2/5 lg:w-1/5 bg-[#1313130D] rounded-2xl p-4 flex justify-center items-center'>
@@ -34,7 +42,7 @@ const BookCard = ({book}) => {
                             <p className='font-normal text-lg text-[#131313CC]'>Year of Publishing: {yearOfPublishing}</p>
 
                         </div>
-                        
+
                     </div>
                     <div className='flex flex-col md:flex-row gap-4'>
                         <div className='flex flex-row gap-2'>
@@ -49,16 +57,16 @@ const BookCard = ({book}) => {
 
                 </div>
                 <div className='mt-4 flex flex-col md:flex-row gap-3'>
-                        <div className='bg-[#328EFF26] px-3 py-2 rounded-[30px] text-center flex flex-row items-center justify-center'>
-                            <p className='text-[16px] font-normal text-[#328EFF]'>Category: {category}</p>
-                        </div>
+                    <div className='bg-[#328EFF26] px-3 py-2 rounded-[30px] text-center flex flex-row items-center justify-center'>
+                        <p className='text-[16px] font-normal text-[#328EFF]'>Category: {category}</p>
+                    </div>
 
-                        <div className='bg-[#FFAC3326] px-3 py-2 rounded-[30px] text-center flex flex-row items-center justify-center'>
-                            <p className='text-[16px] font-normal text-[#FFAC33]'>Rating: {rating}</p>
-                        </div>
-                        <div className='flex flex-row items-center justify-center'>
-                            <a className="btn btn-primary bg-[#23BE0A] rounded-[30px] border-0 text-white text-center text-lg font-medium">View Details</a>
-                        </div>
+                    <div className='bg-[#FFAC3326] px-3 py-2 rounded-[30px] text-center flex flex-row items-center justify-center'>
+                        <p className='text-[16px] font-normal text-[#FFAC33]'>Rating: {rating}</p>
+                    </div>
+                    <div className='flex flex-row items-center justify-center'>
+                        <a className="btn btn-primary bg-[#23BE0A] rounded-[30px] border-0 text-white text-center text-lg font-medium hover:bg-green-900" onClick={handleViewDetails}>View Details</a>
+                    </div>
                 </div>
 
             </div>
