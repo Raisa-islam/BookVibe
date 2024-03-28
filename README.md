@@ -11,9 +11,9 @@ Website name Book Vibe. It is a book review website to find amazing and relevant
 Live site Url - "https://rb9a8.netlify.app/"
 
 Feature-
-=> Show a database of books
-=> When click a book , show details and important information related to it
-=> Show trending books in carousel
-=> Can take daily challenge and monitor readers' behaviour
-=> Show read list and wish list to get a idea of your book reading plan and choices
-=> Gives a good recommendation according to ratings
+-  Show a database of books
+-  When click a book , show details and important information related to it
+-  Show trending books in carousel
+-  Can take daily challenge and monitor readers' behaviour
+-  Show read list and wish list to get a idea of your book reading plan and choices
+-  Gives a good recommendation according to ratings
