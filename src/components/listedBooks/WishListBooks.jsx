@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getStoredWishBookOtpion } from "../../utility/localstorage";
 import { useLoaderData } from "react-router-dom";
+import BookCard from "./BookCard";
 
 
 const WishListBooks = () => {
@@ -20,14 +21,9 @@ const WishListBooks = () => {
     }, []);
     return (
         <div>
-            <h1>Whish List</h1>
             <ul>
                 {Wbook.map(book => (
-                    <li key={book.id}>
-                        <p>Title: {book.bookName}</p>
-                        <p>Author: {book.author}</p>
-                        {/* Add additional book information here */}
-                    </li>
+                   <BookCard key={book.bookId} book={book}></BookCard>
                 ))}
             </ul>
         </div>
