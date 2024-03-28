@@ -25,7 +25,7 @@ const Book = ({ book }) => {
                         <div className=' pb-4 border-dashed border-b-[1px] border-[#13131326]'>
                             <div className='flex flex-row gap-2'>
                                 {
-                                    tags.map(tag => (<p className='bg-blue-500 w-fit'> {tag}</p>))
+                                    tags.map(tag => (<p className='bg-blue-500 w-fit' key={tag.id}> {tag}</p>))
                                 }
                             </div>
 

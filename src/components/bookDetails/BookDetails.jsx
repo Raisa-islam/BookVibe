@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import { saveAddBookOption } from "../../utility/localstorage";
+import { saveAddBookOption, saveWishBookOption } from "../../utility/localstorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -11,8 +11,18 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt)
     console.log(book)
     const addRead = ()=>{
-        if(saveAddBookOption(bookId)){
+        if(saveAddBookOption(idInt)){
             toast('book added!')
+        }
+        else{
+            toast('book already added!')
+        }
+        
+    } 
+
+    const addWish = ()=>{
+        if(saveWishBookOption(idInt)){
+            toast('book added to wish list!')
         }
         else{
             toast('book already added!')
@@ -29,7 +39,7 @@ const BookDetails = () => {
                 <div className="flex flex-row">
                     <button className="btn btn-primary" onClick={addRead}>Read</button>
                     
-                    <button className="btn btn-primary">Wish List</button>
+                    <button className="btn btn-primary" onClick={addWish}>Wish List</button>
                 </div>
             </div>
             

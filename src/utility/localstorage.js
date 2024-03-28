@@ -19,4 +19,23 @@ const saveAddBookOption = id =>{
     return !exists;
 }
 
-export {getStoredAddBookOtpion, saveAddBookOption}
+const getStoredWishBookOtpion = () =>{
+    const storedAddBookOtpion = localStorage.getItem('add-wish-book');
+    if(storedAddBookOtpion){
+        return JSON.parse(storedAddBookOtpion)
+    }
+    return [];
+}
+
+const saveWishBookOption = id =>{
+    const storedAddBookOtpion = getStoredWishBookOtpion();
+    const exists = storedAddBookOtpion.find(bookId => bookId === id);
+    if(!exists){
+        storedAddBookOtpion.push(id);
+        localStorage.setItem('add-wish-book', JSON.stringify(storedAddBookOtpion));
+    }
+
+    return !exists;
+}
+
+export {getStoredAddBookOtpion, saveAddBookOption, getStoredWishBookOtpion, saveWishBookOption}
