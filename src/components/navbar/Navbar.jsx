@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const links =<>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to ="/listed-books">Listed Books</NavLink></li>
-        <li><NavLink to="/pages-to-read">Pages To Read</NavLink></li>
+        <li><NavLink to="/" className='hover:text-[#17BE0A] text-lg font-semibold mx-2'>Home</NavLink></li>
+        <li><NavLink to ="/listed-books" className='text-lg font-semibold'>Listed Books</NavLink></li>
+        <li><NavLink to="/pages-to-read" className='text-lg font-semibold mx-2'>Pages To Read</NavLink></li>
     </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar mt-10">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,16 +17,18 @@ const Navbar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {links}
+                            <a className="btn btn-primary bg-[#23BE0A] rounded-lg border-0 text-white mt-3 h-fit">Sign In</a>
+                            <a className="btn btn-primary bg-[#59C6D2] rounded-lg border-0 text-white mt-3">Sign Up</a>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Book Vibe</a>
+                    <a className="btn btn-ghost text-2xl font-bold text-[#131313]">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 ">
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end flex flex-row gap-3 ">
+                <div className="navbar-end md:flex md:flex-row gap-3 hidden">
                     <a className="btn btn-primary bg-[#23BE0A] rounded-lg border-0 text-white">Sign In</a>
                     <a className="btn btn-primary bg-[#59C6D2] rounded-lg border-0 text-white">Sign Up</a>
                 </div>

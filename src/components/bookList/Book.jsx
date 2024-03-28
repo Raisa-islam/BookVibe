@@ -17,24 +17,24 @@ const Book = ({ book }) => {
 
         <>
             <Link to={`/book/${bookId}`}>
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure className="px-10 pt-10">
-                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="" className="rounded-xl" />
-                    </figure>
-                    <div className="card-body text-left">
-                        <div className=' pb-4 border-dashed border-b-[1px] border-[#13131326]'>
-                            <div className='flex flex-row gap-2'>
+                <div className="card w-80 md:w-96 bg-white border border-[#13131326] p-6">
+                    <div className='flex flex-row justify-center items-center bg-[#F3F3F3] rounded-xl py-6'>
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="" className="w-28 h-40" />
+                    </div>
+                    <div className="text-left">
+                        <div className=' pb-5 border-dashed border-b-[1px] border-[#13131326]'>
+                            <div className='flex flex-row gap-2 mt-6'>
                                 {
-                                    tags.map(tag => (<p className='bg-blue-500 w-fit' key={tag.id}> {tag}</p>))
+                                    tags.map(tag => (<p className='bg-[#17BE0A0D] w-fit rounded-3xl text-[16px] text-center text-[#17BE0A] font-medium px-5 py-2' key={tag.id}> {tag}</p>))
                                 }
                             </div>
 
-                            <h2 className="card-title">{bookName}</h2>
-                            <p>By : {author}</p>
+                            <h2 className="card-title mt-6 text-2xl font-bold text-[#131313]">{bookName}</h2>
+                            <p className='mt-4 text-[16px] font-medium text-[#131313CC]'>By : {author}</p>
                         </div>
 
-                        <div className="flex flex-row justify-between">
-                            <div>{category}</div>
+                        <div className="flex flex-row justify-between mt-5 text-[16px] font-medium text-[#131313CC]">
+                            <div className=''>{category}</div>
                             <div className='flex flex-row gap-3'>
                                 {rating}
                                 <img src={starImg} alt="" />
